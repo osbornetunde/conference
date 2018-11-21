@@ -94,6 +94,17 @@ table {
 
 /*
 ---------------------------
+Primary Header
+---------------------------
+ */
+.logo {
+	border-top: 4px solid #648880;
+	padding: 40px 0 22px 0;
+	float: left;
+}
+
+/*
+---------------------------
 Typography
 ---------------------------
  */
@@ -128,3 +139,34 @@ Home
 .hero {
 	padding: 22px 80px 66px 80px;
 }
+
+/*
+  ------------------------------
+  Clearfix
+  ------------------------------
+*/
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+
+/*
+---------------------------
+Primary-footer
+---------------------------
+*/
+
+.primary-footer small {
+	float: left;
+	padding-bottom: 44px;
+	paading-top: 44px;
+	}
