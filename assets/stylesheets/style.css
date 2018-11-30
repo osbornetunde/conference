@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -173,6 +173,15 @@ Navigation
 	text-align: right;
 }
 
+.nav li {
+	display: inline-block;
+	margin: 0 10px;
+	vertical-align: top;
+}
+
+.nav li:last-child {
+	margin-right: 0;
+}
 /*
 	-----------------------
 	Grid
@@ -288,23 +297,6 @@ Home
 	font-weight: 100;
 }
 
-/*
-  ------------------------------
-  Clearfix
-  ------------------------------
-*/
-.group:before,
-.group:after {
-  content: "";
-  display: table;
-}
-.group:after {
-  clear: both;
-}
-.group {
-  clear: both;
-  *zoom: 1;
-}
 
 /*
 -------------------------------
@@ -346,3 +338,38 @@ text-align: center;
 	line-height: 33px;
 }
 
+/*
+-----------------------------
+Speakers
+-----------------------------
+ */
+
+.speaker-info {
+	border: 1px solid #dfe2e5;
+	border-radius: 5px;
+	margin-top: 88px;
+	padding: 22px 0;
+	text-align: center;
+}
+
+.speaker {
+	margin-bottom: 44px;
+}
+
+/*
+  ------------------------------
+  Clearfix
+  ------------------------------
+*/
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
